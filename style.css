@@ -1,0 +1,20 @@
+html, body{
+    background-color: gainsboro;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: gainsboro;
+
+}
+
+#labels {
+    background-color: white;
+    min-width: 100px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}

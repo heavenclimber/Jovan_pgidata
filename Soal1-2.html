@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        var arrayObj = [{
+            "id": 28,
+            "Title": "Sweden"
+        }, {
+            "id": 56,
+            "Title": "USA"
+        }, {
+            "id": 89,
+            "Title": "England"
+        }];
+
+        var i = 0;
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.getElementById("labels").innerHTML = arrayObj[0].id + " " + arrayObj[0].Title
+        });
+
+        function changeValue() {
+            i++;
+            if(i>=arrayObj.length){
+                i=0;
+                document.getElementById("labels").innerHTML = arrayObj[0].id + " " + arrayObj[0].Title
+            }
+            else{
+                document.getElementById("labels").innerHTML = arrayObj[i].id + " " + arrayObj[i].Title
+            }
+            
+            // for (var i = 0; i < arrayObj.length; i++) {
+
+            // }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <label id="labels">S</label>
+        <button onclick="changeValue()">Change Value</button>
+    </div>
+</body>
+
+</html>
