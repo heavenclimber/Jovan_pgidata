@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+
 }
 
 .App-logo {
@@ -36,3 +42,16 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: "flex";
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container input{
+  margin-right: 10px;
+}
+
